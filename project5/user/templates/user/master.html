@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{% url 'home1' %}">HOME</a>    <a href="{% url 'about1' %}">ABOUT</a>     <a href="{% url 'contact1' %}">CONTACT</a>
+    {% block content %}
+    {% endblock %}
+    <h1>footer</h1>
+    <img src="{% static 'image/download.jpg' %}" >
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, reiciendis!</p>
+    <marquee><h1>hey gyss have a nice day</h1></marquee>
+
+   
+</body>
+</html>

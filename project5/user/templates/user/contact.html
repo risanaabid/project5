@@ -1,0 +1,25 @@
+{% extends 'user/master.html' %}
+{% load static %}
+{% block content %}
+<table>
+    <tr>
+        <td>name</td>
+        <td><input type="text" placeholder="enter ur name"></td>
+    </tr>
+    <tr>
+        <td>age</td>
+        <td><input type="number" placeholder="enter ur age"></td>
+    </tr>
+    <tr>
+        <td>DOB</td>
+        <td><input type="date"></td>
+    </tr>
+    <tr>
+        <td>address</td>
+        <td><input type="textarea"></td>
+    </tr>
+
+</table>
+<img src="{% static 'image/images.jpg' %}" >
+<h2>footer</h2>
+{% endblock %}
